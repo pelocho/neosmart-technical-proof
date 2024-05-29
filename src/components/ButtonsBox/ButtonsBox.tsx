@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-import sidebarIcon from '../assets/icon-sidebar.png'
-import expandedIcon from '../assets/expanded-panel.png'
-import expandIcon from '../assets/expand-panel.png'
+import sidebarIcon from '../../assets/icon-sidebar.png'
+import expandedIcon from '../../assets/expanded-panel.png'
+import expandIcon from '../../assets/expand-panel.png'
 
 interface ButtonsBoxProps {
     boxName: string,

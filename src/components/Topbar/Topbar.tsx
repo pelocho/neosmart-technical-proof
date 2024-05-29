@@ -1,7 +1,7 @@
-import darkModeImg from '../assets/icon-light-dark-mode-dark.png'
-import avatarImg from '../assets/Avatar.png'
-import notificationImg from '../assets/icon-notification-dark.png'
-import searchImg from '../assets/icon-search-dark.png'
+import darkModeImg from '../../assets/icon-light-dark-mode-dark.png'
+import avatarImg from '../../assets/Avatar.png'
+import notificationImg from '../../assets/icon-notification-dark.png'
+import searchImg from '../../assets/icon-search-dark.png'
 
 export default function Topbar() {
 

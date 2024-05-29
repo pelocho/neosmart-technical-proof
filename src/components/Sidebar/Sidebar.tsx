@@ -1,6 +1,6 @@
-import academyIcon from '../assets/icon-academy.png'
-import infoIcon from '../assets/icon-info.png'
-import ButtonsBox from './ButtonsBox';
+import academyIcon from '../../assets/icon-academy.png'
+import infoIcon from '../../assets/icon-info.png'
+import ButtonsBox from '../ButtonsBox/ButtonsBox';
 
 export default function Sidebar() {
 

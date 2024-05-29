@@ -1,7 +1,7 @@
-import logoImg from '../assets/logo.png'
-import linkedInImg from '../assets/icon-linkedin.png'
-import instagramImg from '../assets/icon-instagram.png'
-import twitterImg from '../assets/icon-twitter.png'
+import logoImg from '../../assets/logo.png'
+import linkedInImg from '../../assets/icon-linkedin.png'
+import instagramImg from '../../assets/icon-instagram.png'
+import twitterImg from '../../assets/icon-twitter.png'
 
 export default function Footer() {
 
@@ -53,17 +53,17 @@ export default function Footer() {
                         <p>Terms of Service</p>
                     </li>
                     <li className='flex flex-row py-3'>
-                        <img src={linkedInImg} className='pr-2'/>
-                        <img src={instagramImg} className='pr-2'/>
-                        <img src={twitterImg}/>
+                        <img src={linkedInImg} className='pr-2' />
+                        <img src={instagramImg} className='pr-2' />
+                        <img src={twitterImg} />
                     </li>
                 </ul>
                 <div className='text-center text-white font-thin p-5 col-span-3'>
-                <p className='pb-2'>support@neoprompts.ai</p>
-                <p className=''>Neoprompts is a product of <span className='font-semibold'>Neosmart</span>, all rights reserved.</p>
+                    <p className='pb-2'>support@neoprompts.ai</p>
+                    <p className=''>Neoprompts is a product of <span className='font-semibold'>Neosmart</span>, all rights reserved.</p>
+                </div>
             </div>
-            </div>
-            
+
         </footer>
     )
 }
