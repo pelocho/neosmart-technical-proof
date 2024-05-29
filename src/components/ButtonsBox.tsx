@@ -17,7 +17,7 @@ export default function ButtonsBox({ boxName, options }: ButtonsBoxProps) {
     }
 
     return (
-        <div className='py-10'>
+        <div className='py-10 font-thin'>
             <div className='bg-secondary rounded-lg mx-6'>
                 <div className='flex flex-row'>
                     <img src={sidebarIcon} className='p-2' />

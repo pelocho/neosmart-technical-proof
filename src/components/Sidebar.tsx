@@ -9,19 +9,19 @@ export default function Sidebar() {
 
     return (
         <>
-            <aside className="bg-primary w-64 h-screen">
+            <aside className="bg-primary w-45 2xl:w-64 h-screen fixed">
                 <ButtonsBox boxName='Prompts' options={firstButtonBoxOptions}></ButtonsBox>
 
                 <ButtonsBox boxName='My Profile' options={secondButtonBoxOptions}></ButtonsBox>
 
                 <div className='flex flex-row m-6 py-10'>
                     <img src={academyIcon} className='px-2' />
-                    <p className='mt-1.5 text-white'>Academy</p>
+                    <p className='mt-1.5 text-white font-thin'>Academy</p>
                 </div>
 
                 <div className='flex flex-row m-6 py-10'>
                     <img src={infoIcon} className='px-2' />
-                    <p className='mt-1.5 text-white'>FAQs</p>
+                    <p className='mt-1.5 text-white font-thin'>FAQs</p>
                 </div>
             </aside>
         </>

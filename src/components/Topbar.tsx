@@ -9,7 +9,7 @@ export default function Topbar() {
 
     return (
         <>
-            <nav className="bg-primary py-3.5 shadow-xl">
+            <nav className="bg-primary py-3.5 shadow-xl sticky top-0">
                 <div className='flex justify-end mr-12'>
                     {images.map((image) => (
                         <button type='button' className='px-3.5'>
