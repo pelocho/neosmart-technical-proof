@@ -15,3 +15,7 @@ npm install
 npm run dev
 ```
 4. Access the URL provided in the cmd.
+
+## Code documentation
+
+All the components and files I've created are commented for better understanding.
