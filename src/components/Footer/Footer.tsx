@@ -3,8 +3,13 @@ import linkedInImg from '../../assets/icon-linkedin.png'
 import instagramImg from '../../assets/icon-instagram.png'
 import twitterImg from '../../assets/icon-twitter.png'
 
+/**
+ * Footer of the page
+ * @returns {JSX.Element} - A styled footer with the company information.
+ */
 export default function Footer() {
 
+    //I created this list with the addresses of the offices to print them dynamically and reduce code lines
     const europeAddress: string[] = ['Vía de las Dos Castillas, 33', 'Edificio Ática 7, Planta 3', '28224 Pozuelo de Alarcón', 'Madrid, Spain']
     const usaAddress: string[] = ['1101 Brickell Ave Suite', 'N1400 33131, Miami FL,', 'United States']
 

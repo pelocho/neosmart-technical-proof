@@ -1,6 +1,10 @@
 import { Category } from "../types/category";
 import { User } from "../types/user";
 
+/**
+ * Dummy categories and user for showing on the dashboard
+ */
+
 export const dummyCategories: Category[] = [
     {
         category_id: 1,

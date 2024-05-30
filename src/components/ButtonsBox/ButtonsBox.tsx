@@ -4,12 +4,21 @@ import sidebarIcon from '../../assets/icon-sidebar.png'
 import expandedIcon from '../../assets/expanded-panel.png'
 import expandIcon from '../../assets/expand-panel.png'
 
+
+//Using this interfaces as data structure we're expecting to receive on the component (TS)
 interface ButtonsBoxProps {
     boxName: string,
     options: string[]
 }
 
+/**
+ * Button box in the sidebar.
+ * @param {boxName}  - The text that appears on the box
+ * @param {options}  - List of all the suboptions shoed when the user expand the box
+ * @returns {JSX.Element} - A styled buttons box.
+ */
 export default function ButtonsBox({ boxName, options }: ButtonsBoxProps) {
+    //Managin the state of the box (close as default)
     const [expanded, setExpanded] = useState(false);
 
     function handleExpand() {

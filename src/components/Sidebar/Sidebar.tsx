@@ -2,8 +2,15 @@ import academyIcon from '../../assets/icon-academy.png'
 import infoIcon from '../../assets/icon-info.png'
 import ButtonsBox from '../ButtonsBox/ButtonsBox';
 
+/**
+ * Component for the sidebar
+ * * @returns {JSX.Element} - A styled sidebar
+ */
 export default function Sidebar() {
 
+    //I've made a list of the differents options that needed to be added in each dropdown in the sidebar 
+    //I've also create a separated component for render the box with options to avoid duplictaed code and
+    //also to manage the expand state of each one separated.
     const firstButtonBoxOptions: string[] = ['Legal', 'People', 'Marketing', 'Finance'];
     const secondButtonBoxOptions: string[] = ['My prompts', 'Saved', 'Settings', 'Share with friends'];
 

@@ -1,3 +1,7 @@
+/**
+ * Component for the category legal svg converted to code
+ * * @returns {JSX.Element} - A styled SVG icon
+ */
 export default function MarketingIcon() {
     return (
         <>
