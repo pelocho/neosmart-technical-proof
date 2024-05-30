@@ -23,7 +23,7 @@ export default function ButtonsBox({ boxName, options }: ButtonsBoxProps) {
                     <img src={sidebarIcon} className='p-2' />
                     <p className='mt-3 text-white'>{boxName}</p>
                     <button onClick={handleExpand}>
-                        <img src={expanded ? expandedIcon : expandIcon} className='p-2' />
+                        <img src={expanded ? expandedIcon : expandIcon} />
                     </button>
                 </div>
                 <div className={!expanded ? 'hidden' : undefined}>
