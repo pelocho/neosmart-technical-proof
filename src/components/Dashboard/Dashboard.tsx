@@ -2,7 +2,7 @@ import { dummyCategories, dummyUser } from "../../dummyData/dummyData"
 import CategoryCard from "../CategoryCard/CategoryCard"
 
 /**
- * Space for managin the space for the categories cards
+ * Space for managin the space for the categories cards and for say hi to the user in the dummy data
  * @returns {JSX.Element} - A styled card with category information.
  */
 export default function Dashboard() {
