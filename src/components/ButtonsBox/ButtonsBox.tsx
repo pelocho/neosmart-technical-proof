@@ -19,7 +19,7 @@ export default function ButtonsBox({ boxName, options }: ButtonsBoxProps) {
     return (
         <div className='py-10 font-thin'>
             <div className='bg-secondary rounded-lg mx-6'>
-                <div className='flex flex-row'>
+                <div className='flex flex-row justify-around'>
                     <img src={sidebarIcon} className='p-2' />
                     <p className='mt-3 text-white'>{boxName}</p>
                     <button onClick={handleExpand}>
@@ -28,8 +28,8 @@ export default function ButtonsBox({ boxName, options }: ButtonsBoxProps) {
                 </div>
                 <div className={!expanded ? 'hidden' : undefined}>
                     <ul>
-                        {options.map((option) => (
-                            <li>
+                        {options.map((option, index) => (
+                            <li key={index}>
                                 <a href="#" className="flex items-center pl-11 py-1 text-white">{option}</a>
                             </li>
                         ))}

@@ -1,8 +1,29 @@
+import LegalSVG from "../IconsSVG/LegalIcon"
+import MarketingSVG from "../IconsSVG/MarketingIcon"
+import PeopleSVG from "../IconsSVG/PeopleIcon"
+import StartupSVG from "../IconsSVG/StartupIcon"
+
 interface CategoryCardProps {
     name: string,
     picture: string,
     icon: string,
     subcategories: string[]
+}
+
+interface IconRender {
+    icon: string
+}
+
+function IconSVG({ icon }: IconRender) {
+    if (icon === 'legalSVG') {
+        return <LegalSVG />
+    } else if (icon === 'marketingSVG') {
+        return <MarketingSVG />
+    } else if (icon === 'peopleSVG') {
+        return <PeopleSVG />
+    } else {
+        return <StartupSVG />
+    }
 }
 
 export default function CategoryCard({ name, picture, icon, subcategories }: CategoryCardProps) {
@@ -11,17 +32,14 @@ export default function CategoryCard({ name, picture, icon, subcategories }: Cat
             <img src={picture} />
             <div className='flex justify-between p-5'>
                 <p className='text-xl text-white group-hover:text-orange'>{name}</p>
-                <img src={icon} className="group-hover:stroke-orange"></img>
-
+                <IconSVG icon={icon}></IconSVG>
             </div>
             <ul className='py-10 px-5 text-white'>
-                {subcategories.map((subcategory) => (
-                    <>
-                        <li>
-                            {subcategory}
-                        </li>
+                {subcategories.map((subcategory, index) => (
+                    <li key={index}>
+                        {subcategory}
                         <hr className='mt-1.5' />
-                    </>
+                    </li>
                 ))}
             </ul>
             <div className='flex justify-center p-10'>

@@ -19,8 +19,8 @@ export default function Footer() {
                     <li>
                         <p className='font-semibold'>EUROPE</p>
                     </li>
-                    {europeAddress.map((line) => (
-                        <li>
+                    {europeAddress.map((line, index) => (
+                        <li key={index}>
                             <p className='font-thin'>{line}</p>
                         </li>
                     ))}
@@ -28,8 +28,8 @@ export default function Footer() {
                     <li>
                         <p className='font-semibold mt-10'>USA</p>
                     </li>
-                    {usaAddress.map((line) => (
-                        <li>
+                    {usaAddress.map((line, index) => (
+                        <li key={index}>
                             <p className='font-thin'>{line}</p>
                         </li>
                     ))}
